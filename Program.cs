@@ -1,4 +1,6 @@
-﻿string[] arr = { "Hello", "2", "world", ":-)" };
+﻿string[] arr_1 = { "Hello", "2", "world", ":-)" };
+string[] arr_2 = { "1234", "1567", "-2", "computer science" };
+string[] arr_3 = { "Russia", "Denmark", "Kazan" };
 
 int max_simvol = 3;
 
@@ -33,10 +35,12 @@ void PrintArray(string[] array)
 void Rezult(string[] array)
 {
     PrintArray(array);
-    string[] Array = NewArray(array);
+    string[] FinishArray = NewArray(array);
 
-    PrintArray(Array);
+    PrintArray(FinishArray);
     Console.WriteLine();
 }
 
-Rezult(arr);
+Rezult(arr_1);
+Rezult(arr_2);
+Rezult(arr_3);
